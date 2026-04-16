@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import AuthPage from './pages/AuthPage'
 import Landing from './pages/Landing'
 import Layout from './components/Layout'
 import DashboardHome from './pages/DashboardHome'
@@ -12,8 +13,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Public Landing Page */}
-        <Route path="/" element={<Landing />} />
+        {/* Auth Page — First Page (Default Route) */}
+        <Route path="/" element={<AuthPage />} />
+
+        {/* Public Landing Page (after login) */}
+        <Route path="/home" element={<Landing />} />
 
         {/* Dashboard with Sidebar Layout */}
         <Route path="/dashboard" element={<Layout />}>

@@ -183,3 +183,39 @@ body {
   background: #fef3c7;
   color: #92400e;
 }
+
+/* =========== AUTH PAGE =========== */
+.auth-left-gradient {
+  background: linear-gradient(135deg, #064e3b 0%, #047857 25%, #059669 50%, #0d9488 75%, #14b8a6 100%);
+}
+
+.auth-btn-gradient {
+  background: linear-gradient(135deg, #047857 0%, #059669 40%, #0d9488 70%, #14b8a6 100%);
+  background-size: 200% 200%;
+  animation: btn-shimmer 4s ease infinite;
+}
+
+@keyframes btn-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Marquee animations for grocery items */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee {
+  animation: marquee linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse linear infinite;
+}
