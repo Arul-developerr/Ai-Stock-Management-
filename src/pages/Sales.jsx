@@ -176,7 +176,7 @@ export default function Sales() {
                 <motion.div variants={itemVariants} className="glass-card rounded-2xl p-6">
                     <h3 className="text-lg font-bold text-slate-800 mb-1">Category Breakdown</h3>
                     <p className="text-xs text-slate-400 mb-4">What types of products sell the most</p>
-                    <div className="flex items-center gap-6">
+                    <div className="flex flex-col sm:flex-row items-center gap-6">
                         <div className="w-48 h-48">
                             <ResponsiveContainer width="100%" height="100%">
                                 <PieChart>

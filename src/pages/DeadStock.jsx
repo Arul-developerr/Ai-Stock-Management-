@@ -82,7 +82,7 @@ export default function DeadStock() {
             </div>
 
             {/* Filter Tabs */}
-            <motion.div variants={itemVariants} className="flex items-center gap-2">
+            <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-2">
                 {[
                     { key: 'all', label: `All Items (${items.length})` },
                     { key: 'critical', label: `Critical (${criticalCount})` },
